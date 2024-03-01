@@ -37,7 +37,13 @@ class AlbumController extends Controller
         $album = Album::where('id', $id)->first();
 
         return view('pages.detail-album', compact('fotos', 'album', 'user'));
+    }
 
+    public function hapusalbum($id){
+        $album = Album::where('id', $id)->first();
+        $album->delete();
+
+        return redirect()->back()->with('success', 'Album Berhasil Di Hapus');
 
 
     }

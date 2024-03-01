@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PinController;
+use App\Http\Controllers\FotoController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ViewController;
 use App\Http\Controllers\AlbumController;
@@ -73,9 +74,15 @@ Route::middleware('auth')->group(function(){
 
 
     Route::get('/album', [ViewController::class, 'album']);
+    Route::get('/buatalbum', [ViewController::class, 'buatalbum']);
     Route::post('/buat-album', [AlbumController::class, 'storeAlbum']);
     Route::get('/detailalbum/{id}', [AlbumController::class, 'detail']);
-    Route::get('/buatalbum', [ViewController::class, 'buatalbum']);
+    Route::get('/delete/{id}', [AlbumController::class, 'hapusalbum']);
+
+
+    Route::get('/edit/{id}', [ViewController::class, 'editfoto']);
+    Route::post('/edit-postingan/{id}', [FotoController::class, 'editpostingan']);
+    Route::get('/hapus/{id}', [FotoController::class, 'hapuspostingan']);
 
 
     Route::get('/logout', [UserController::class, 'logout']);

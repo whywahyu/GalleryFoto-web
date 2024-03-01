@@ -12,7 +12,7 @@ class UploadController extends Controller
         $request->validate([
             'url'               =>  'required',
             'judul_foto'        => 'required',
-            'deskripsi_foto'    => 'required'
+            'deskripsi_foto'    => 'required',
         ]);
 
         $fotoFile = $request->file('url');

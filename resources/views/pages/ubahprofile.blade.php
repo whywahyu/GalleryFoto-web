@@ -34,20 +34,20 @@
             <div class="flex flex-col items-center w-2/6 h-72 bg-white rounded-md shadow-md max-[480px]:w-full">
                 <img src="{{ asset('assets/'.$user->picture)}}" alt="" class="rounded-full w-36 h-36" >
                 <input type="file" name="picture" class="items-center w-48 h-10 mt-4 border rounded-md">
-
+                <button type="submit" class="w-48 py-1 mt-4 text-white rounded-md bg-green-500">Ubah Photo</button>
             </div>
             <div class="w-3/5 max-[480px]:w-full">
                 <div class="bg-white rounded-md shadow-md ">
                     <div class="flex flex-col px-4 py-4 ">
-
-                        <h5>Nama Lengkap</h5>
+                        <h5 class="mt-3">Nama Lengkap</h5>
                         <input type="text" name="nama_lengkap" value="{{ $user->nama_lengkap }}" class="py-1 rounded-md">
-                        <h5>Username</h5>
+                        <h5 class="mt-3">Username</h5>
                         <input type="text" name="username" value="{{ $user->username }}" class="py-1 rounded-md">
-                        </select>
-                        <h5>Alamat</h5>
-                        <input type="text" name="alamat" value="{{ $user->alamat }}" class="py-1 rounded-md">
+                        <h5 class="mt-3">Email</h5>
+                        <input type="text" name="email" value="{{ $user->email }}" class="py-1 rounded-md">
 
+                        <h5 class="mt-3">Alamat</h5>
+                        <input type="text" name="alamat" value="{{ $user->alamat }}" class="py-1 rounded-md">
                         <button type="submit" class="py-2 mt-4 text-white rounded-md bg-green-500">Perbaharui</button>
                     </div>
                 </div>

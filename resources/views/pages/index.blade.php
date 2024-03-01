@@ -14,14 +14,14 @@
                 <div class="flex gap-4 px-2">
                     <div>
                         <div class="flex flex-col gap-4">
-                            <img src="/assets/bg_01.jpg" alt="" class="transition duration-500 ease-in-out hover:scale-105">
-                            <img src="/assets/bg_02.jpg" alt="" class="transition duration-500 ease-in-out hover:scale-105">
+                            <img src="/assets/img-14.jpg" alt="" class="transition duration-500 ease-in-out hover:scale-105">
+                            <img src="/assets/img-05.jpg" alt="" class="transition duration-500 ease-in-out hover:scale-105">
                         </div>
                     </div>
                     <div>
                         <div class="flex flex-col gap-4">
-                            <img src="/assets/bg_01.jpg" alt="" class="transition duration-500 ease-in-out hover:scale-105">
-                            <img src="/assets/bg_02.jpg" alt="" class="transition duration-500 ease-in-out hover:scale-105">
+                            <img src="/assets/img-13.jpg" alt="" class="transition duration-500 ease-in-out hover:scale-105">
+                            <img src="/assets/img-09.jpg" alt="" class="transition duration-500 ease-in-out hover:scale-105">
                         </div>
                     </div>
 

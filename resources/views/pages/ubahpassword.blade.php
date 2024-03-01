@@ -2,7 +2,7 @@
 @section('content')
 
 
-    <section class="mt-32">
+    <section class="mt-32 mb-6">
         <div class="items-center max-w-screen-md mx-auto ">
             <h3 class="text-5xl text-center font-hurricane">Ubah Password</h3>
         </div>
@@ -48,17 +48,17 @@
             <div class="w-full">
                 <div class="bg-white rounded-md shadow-md ">
                     <div class="flex flex-col px-8 py-4 ">
-                        <h5>Password Lama</h5>
+                        <h5 >Password Lama</h5>
                         <input type="password" name="password_lama" class="py-1 rounded-md">
                         @error('password_lama')
                             <small class="italic text-red-800">{{ $message }}</small>
                         @enderror
-                        <h5>Password Baru</h5>
+                        <h5 class="mt-3">Password Baru</h5>
                         <input type="password" name="password_baru" class="py-1 rounded-md">
                         @error('password_baru')
                             <small class="italic text-red-800">{{ $message }}</small>
                         @enderror
-                        <h5>Konfirmasi Password</h5>
+                        <h5 class="mt-3">Konfirmasi Password</h5>
                         <input type="password" name="confirm_password" class="py-1 rounded-md">
                         @error('confirm_password')
                             <small class="italic text-red-800">{{ $message }}</small>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Trigerlogin;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -11,6 +12,9 @@ class UserController extends Controller
     public function login(Request $request)
     {
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+            Trigerlogin::create([
+                'id_user'=>Auth::user()->id
+            ]);
             return redirect('/explore')->with('success', 'Selamat Anda Berhasil Login');
         } else {
             return redirect('/login')->with('error', 'Email Atau Password Salah');
@@ -46,9 +50,11 @@ class UserController extends Controller
 
      }
 
-     public function logout(Request $request)
-        {
-            Auth::logout();
+     public function logout(Request $request){
+            $user = Auth::user();
+            if($user){
+                Trigerlogin::where('id_user', $user->id)->delete();
+            }
             $request->session()->invalidate();
             $request->session()->regenerateToken();
             return redirect('/');

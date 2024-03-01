@@ -63,6 +63,7 @@ const getExplore =()=>{
             `
             <div class="flex mt-2 bg-white">
                 <div class="flex flex-col px-2">
+                    
                     <a href="/explore-detail/${x.id}">
                         <div class="w-[363px] h-[192px] bg-bgcolor2 overflow-hidden">
                             <img src="/assets/${x.foto}" alt="" class="w-full transition duration-500 ease-in-out hover:scale-105">
@@ -84,6 +85,8 @@ const getExplore =()=>{
                             <span class="bi bi-chat-left-text"></span>
                             <small>${x.jml_like}</small>
                             <span class="bi ${x.idUserLike === x.useractive ? 'bi-heart-fill text-red-500': 'bi-heart'}" onclick="likes(this, ${x.id})"></span>
+                            <a href="/edit/${x.id}" class="bg-green-300 px-1 rounded-md"><span class="bi bi-pencil-fill"></span></a>
+                            <a href="/hapus/${x.id}" class="bg-red-400 px-1 rounded-md"><span class="bi bi-trash3-fill"></span></a>
                         </div>
                     </div>
                 </div>
@@ -91,6 +94,15 @@ const getExplore =()=>{
             `
         )
     })
+}
+
+function toggleContent1(index) {
+    var dropdown = document.getElementById('dropdownDots' + index);
+    if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+        dropdown.style.display = 'block';
+    } else {
+        dropdown.style.display = 'none';
+    }
 }
 
 function likes(txt, id){

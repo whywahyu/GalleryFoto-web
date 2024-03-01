@@ -60,10 +60,11 @@ class ProfileController extends Controller
         } else {
             $picture = $user->picture;
         }
-
+        
         $user->nama_lengkap = $request->nama_lengkap;
         $user->username     = $request->username;
         $user->alamat       = $request->alamat;
+        $user->email        = $request->email;
 
         $user->save();
 

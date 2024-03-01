@@ -27,7 +27,6 @@
         @csrf
         <section class="mt-10">
             <div class="max-w-screen-md mx-auto flex justify-center">
-
                     <div class="w-2/5  max-[480px]:w-full px-2">
                         <div class="flex flex-col flex-wrap">
                             <h3>Judul</h3>
@@ -35,19 +34,17 @@
                             <h3 class="mt-4">Deskripsi</h3>
                             <textarea name="deskripsi_foto" id="" cols="30" rows="10"
                                 class="w-full h-24 mb-2 border-slate-500 rounded-xl"></textarea>
-                                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">Upload file</label>
-                                <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="file_input_help" name="url" id="file_input" type="file">
-
-
-                            <h3>Album</h3>
-                            <select name="album" id="">
+                            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">Upload file</label>
+                            <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer
+                                bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600
+                                dark:placeholder-gray-400" aria-describedby="file_input_help" name="url" id="file_input" type="file">
+                            <h3 class="mt-3">Album</h3>
+                            <select name="album" id="" class="rounded-full">
+                                <option value="">--Pilih Album--</option>
                                 @foreach ($albums as $album )
-                                <option value="{{$album->id}}">{{$album->nama_album}}</option>
-
+                                    <option value="{{$album->id}}">{{$album->nama_album}}</option>
                                 @endforeach
-
                             </select>
-
                             <div class="flex flex-row justify-between">
                                 <div></div>
                                 <button class="px-6 py-1 mt-4 text-white rounded-md bg-green-500">upload</button>

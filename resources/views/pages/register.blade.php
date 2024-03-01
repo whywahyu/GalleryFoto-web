@@ -25,12 +25,12 @@
                 </div>
                 @endif
                 <h4 class="mt-3">Username</h4>
-                <input type="text" name="username" class="py-1 rounded-md text-slate-700">
+                <input type="text" name="username" value="{{old('username')}}" class="py-1 rounded-md text-slate-700">
                 @error('username')
                     <small class="italic text-red-800">{{ $message }}</small>
                 @enderror
                 <h4 class="mt-3">Email</h4>
-                <input type="text" name="email" class="py-1 rounded-md text-slate-700">
+                <input type="text" name="email" value="{{old('email')}}" class="py-1 rounded-md text-slate-700">
                 @error('email')
                     <small class="italic text-red-800">{{ $message }}</small>
                 @enderror

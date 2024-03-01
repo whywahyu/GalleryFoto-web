@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"  rel="stylesheet" />
+
     <style>
         @media(max-width:768px) {
             .flex-container {
@@ -32,7 +33,7 @@
 <body>
 
 
-    <nav class="fixed top-0 z-20 w-full bg-white shadow-md">
+    <nav class="fixed top-0 z-20 w-full bg-green-100 shadow-md">
         <div class="flex flex-wrap items-center justify-center max-w-screen-xl p-4 mx-auto">
             <a href="/explore" class="mr-4">EXPLORE</a>
             <a href="/upload" class="mr-4">UPLOAD</a>
@@ -52,15 +53,6 @@
                                 role="menuitem" >
                                 <div class="inline-flex items-center">
                                     Profile
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/album"
-                                class="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                                role="menuitem">
-                                <div class="inline-flex items-center">
-                                    Album
                                 </div>
                             </a>
                         </li>
@@ -90,7 +82,6 @@
     </nav>
     @yield('content')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
-
 </body>
 @stack('footerjsexternal')
 </html>

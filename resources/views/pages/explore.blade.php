@@ -25,7 +25,7 @@
                 </div>
             @endif
         <div class="items-center max-w-screen-md mx-auto ">
-            <h3 class="text-5xl text-center font-hurricane">Gallery</h3>
+            <h3 class="text-5xl text-center font-hurricane">Explore</h3>
         </div>
     </section>
     <section class="mt-10">
@@ -39,6 +39,6 @@
     </section>
 @endsection
 @push('footerjsexternal')
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="/javascript/explore.js"></script>
 @endpush

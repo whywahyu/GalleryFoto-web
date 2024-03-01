@@ -27,7 +27,7 @@ class User extends Authenticatable
         'email',
         'password',
     ];
-    
+
 
 
     //relasi ke foto sudah umpan balik
@@ -44,6 +44,11 @@ class User extends Authenticatable
     public function likefotos()
     {
         return $this->hasMany(Like::class, 'user_id', 'id');
+    }
+
+    public function trigerlogin()
+    {
+        return $this->hasMany(Trigerlogin::class, 'id_user', 'id');
     }
 
     /**

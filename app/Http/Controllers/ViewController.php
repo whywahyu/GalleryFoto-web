@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Foto;
 use App\Models\Album;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -58,6 +59,12 @@ class ViewController extends Controller
     public function buatalbum(Request $request){
         $user = auth()->user();
         return view('pages.buatalbum', compact('user'));
+    }
+    public function editfoto(Request $request, $id){
+        $user = auth()->user();
+        $albums = Album::where('user_id', Auth::user()->id)->get();
+        $foto = Foto::find($id);
+        return view('pages.edit-foto', compact('user', 'albums', 'foto'));
     }
 
 }
