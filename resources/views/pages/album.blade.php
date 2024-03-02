@@ -43,7 +43,7 @@
                                 <img src="{{asset('/assets/'.$album->foto)}}" alt="" class="w-full transition duration-500 hover:scale-105">
                             </div>
                         </a>
-                        <div class="flex flex-wrap items-center justify-between mt-2">
+                        <div class="flex flex-wrap items-center justify-between mt-2 shadow-xl">
                             {{ $album->nama_album }}
                             <a href="/delete/{{$album->id}}" class="bg-red-400 px-1 rounded-md"><span class="bi bi-trash3-fill"></span></a>
                         </div>

@@ -7,7 +7,7 @@
             <a href="/album"><button class="px-3 py-1 bg-slate-200 rounded-md ml-8"><-</button></a>
         </div>
         <div class="items-center max-w-screen-md mx-auto ">
-            <h3 class="text-5xl text-center font-hurricane">Detail Album</h3>
+            <h3 class="text-5xl text-center font-hurricane">{{$album->nama_album}}</h3>
             <p class="text-center font-serif mt-4">{{$album->deskripsi}}</p>
         </div>
     </section>
@@ -27,9 +27,7 @@
                                     <div>
                                         {{$foto->judul_foto}}
                                     </div>
-                                    <div class="text-xs text-abuabu">
-                                        {{$foto->created_at}}
-                                    </div>
+
                                 </div>
                             </div>
                             {{-- <div>

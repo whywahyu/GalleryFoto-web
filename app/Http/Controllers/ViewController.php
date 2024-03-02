@@ -25,6 +25,7 @@ class ViewController extends Controller
         $user = auth()->user();
         return view('pages.explore', compact('user'));
     }
+
     public function upload(Request $request){
         $user = auth()->user();
         $albums = Album::where('user_id', Auth::user()->id)->get();
@@ -35,31 +36,38 @@ class ViewController extends Controller
         $user = auth()->user();
         return view('pages.myprofile', compact('user'));
     }
+
     public function detail(Request $request){
         $user = auth()->user();
         return view('pages.detail', compact('user'));
     }
+
     public function userlain(Request $request){
         $user = auth()->user();
         return view('pages.userlain', compact('user'));
     }
+
     public function ubahpassword(Request $request){
         $user = auth()->user();
         return view('pages.ubahpassword', compact('user'));
     }
+
     public function ubahprofle(Request $request){
         $user = auth()->user();
         return view('pages.ubahprofile', compact('user'));
     }
+
     public function album(Request $request){
         $user = auth()->user();
         $albums = Album::where('user_id', Auth::user()->id)->get();
         return view('pages.album', compact('user', 'albums'));
     }
+
     public function buatalbum(Request $request){
         $user = auth()->user();
         return view('pages.buatalbum', compact('user'));
     }
+
     public function editfoto(Request $request, $id){
         $user = auth()->user();
         $albums = Album::where('user_id', Auth::user()->id)->get();

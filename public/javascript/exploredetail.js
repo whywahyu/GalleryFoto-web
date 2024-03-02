@@ -156,7 +156,7 @@ const tampilkankomentar = ()=>{
                 </div>
                 <div class="flex flex-col mr-2">
                     <h5 class="text-sm">${x.pengirim}</h5>
-                    <small class="text-sm text-gray-500">${new Date(x.waktu).toLocaleDateString("id")}</small>
+                    <small class="text-xs text-gray-500">${new Date(x.waktu).toLocaleDateString("id")}</small>
                 </div>
                     <h5 class="text-sm">${x.isikomentar}</h5>
             </div>

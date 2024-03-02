@@ -27,18 +27,19 @@ class Foto extends Model
     {
         return $this->belongsTo(User::class, 'user_id', 'id');
     }
+
     //nilai balik ke album
     public function albums()
     {
         return $this->belongsTo(Album::class, 'album_id', 'id');
     }
 
-
     //nilai ke komentar
     public function comments()
     {
         return $this->hasMany(Komentar::class, 'foto_id', 'id');
     }
+    
     //nilai ke like
     public function likefotos()
     {

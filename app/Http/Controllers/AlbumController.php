@@ -44,8 +44,6 @@ class AlbumController extends Controller
         $album->delete();
 
         return redirect()->back()->with('success', 'Album Berhasil Di Hapus');
-
-
     }
 
 

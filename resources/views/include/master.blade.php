@@ -33,7 +33,7 @@
 <body>
 
 
-    <nav class="fixed top-0 z-20 w-full bg-green-100 shadow-md">
+    <nav class="fixed top-0 z-20 w-full bg-whait shadow-md">
         <div class="flex flex-wrap items-center justify-center max-w-screen-xl p-4 mx-auto">
             <a href="/explore" class="mr-4">EXPLORE</a>
             <a href="/upload" class="mr-4">UPLOAD</a>
