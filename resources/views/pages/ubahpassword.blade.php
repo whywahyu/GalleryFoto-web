@@ -48,7 +48,7 @@
             <div class="w-full">
                 <div class="bg-white rounded-md shadow-md ">
                     <div class="flex flex-col px-8 py-4 ">
-                        <h5 >Password Lama</h5>
+                        <h5 >Password Saat Ini</h5>
                         <input type="password" name="password_lama" class="py-1 rounded-md">
                         @error('password_lama')
                             <small class="italic text-red-800">{{ $message }}</small>

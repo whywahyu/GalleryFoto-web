@@ -61,7 +61,7 @@
                                 class="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                                 role="menuitem">
                                 <div class="inline-flex items-center">
-                                    Ubah Password
+                                    Change Password
                                 </div>
                             </a>
                         </li>

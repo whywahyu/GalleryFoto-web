@@ -63,7 +63,6 @@ const getExplore =()=>{
             `
             <div class="flex mt-2 bg-white">
                 <div class="flex flex-col px-2">
-                    
                     <a href="/explore-detail/${x.id}">
                         <div class="w-[363px] h-[192px] bg-bgcolor2 overflow-hidden">
                             <img src="/assets/${x.foto}" alt="" class="w-full transition duration-500 ease-in-out hover:scale-105">
