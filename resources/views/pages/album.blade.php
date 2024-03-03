@@ -27,15 +27,12 @@
         </div>
     </div>
     @endif
-    <div class="ml-72 mt-4">
-        <a href="/buatalbum"><button class="px-2 py-1 bg-green-300 rounded-md text-white"><i class="bi bi-plus-circle"></i></button></a>
-    </div>
     <section class="mt-6">
         <div class="max-w-screen-md mx-auto">
-            <div class="flex flex-wrap items-center flex-container">
+            <a href="/buatalbum"><button class="px-2 py-1 bg-green-400 rounded-md text-white"><i class="bi bi-plus-circle"></i></button></a>
+            <div class="flex flex-wrap items-center mt-6 flex-container">
 
                 @foreach ($albums as $album)
-
                 <div class="flex mt-2 bg-white">
                     <div class="flex flex-col px-2">
                         <a href="/detailalbum/{{ $album->id }}">
@@ -45,12 +42,11 @@
                         </a>
                         <div class="flex flex-wrap items-center justify-between mt-2 shadow-xl">
                             {{ $album->nama_album }}
-                            <a href="/delete/{{$album->id}}" class="bg-red-400 px-1 rounded-md"><span class="bi bi-trash3-fill"></span></a>
+                            <a href="/delete/{{$album->id}}" class=" px-1 py-0 rounded-md"><span class="bi bi-trash3-fill"></span></a>
                         </div>
                     </div>
                 </div>
                 @endforeach
-
 
             </div>
         </div>

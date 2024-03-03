@@ -39,8 +39,8 @@
                 @error('password')
                     <small class="italic text-red-800">{{ $message }}</small>
                 @enderror
-                <button type="submit" class="py-1 mt-4 text-white rounded-full bg-green-500">Register</button>
-                <h5 class="mx-auto mt-4 text-xs">Sudah punya akun? <a href="/login" class="text-blue-500">Log in</a></h5>
+                <button type="submit" class="py-1 mt-4 text-white rounded-full bg-blue-500">Register</button>
+                <h5 class="mx-auto mt-4 text-xs">Sudah punya akun? <a href="/login" class="text-blue-500">Login</a></h5>
             </div>
         </div>
     </section>
