@@ -4,7 +4,7 @@
 
     <section class="mt-32 mb-6">
         <div class="items-center max-w-screen-md mx-auto ">
-            <h3 class="text-5xl text-center font-hurricane">Ubah Password</h3>
+            <h3 class="text-5xl text-center font-hurricane">Change Password</h3>
         </div>
     </section>
     @if ($message = Session::get('success'))

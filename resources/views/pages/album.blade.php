@@ -2,9 +2,9 @@
 @section('content')
 
 
-    <section class="mt-32">
+    <section class="mt-28">
         <div>
-            <a href="/profile"><button class="px-3 py-1 bg-slate-200 rounded-md ml-8"><-</button></a>
+            <a href="/profile"><button class="px-3 py-1 bg-slate-200 rounded-md ml-8"><i class="bi bi-arrow-left"></i></button></a>
         </div>
         <div class="items-center max-w-screen-md mx-auto ">
             <h3 class="text-5xl text-center font-hurricane">Album</h3>
@@ -28,9 +28,9 @@
     </div>
     @endif
     <div class="ml-72 mt-4">
-        <a href="/buatalbum"><button class="px-3 py-1 bg-green-300 rounded-md text-white">+Buat Album</button></a>
+        <a href="/buatalbum"><button class="px-2 py-1 bg-green-300 rounded-md text-white"><i class="bi bi-plus-circle"></i></button></a>
     </div>
-    <section class="mt-8">
+    <section class="mt-6">
         <div class="max-w-screen-md mx-auto">
             <div class="flex flex-wrap items-center flex-container">
 

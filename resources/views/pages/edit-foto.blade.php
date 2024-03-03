@@ -4,7 +4,7 @@
 
     <section class="mt-28">
         <div>
-            <a href="/profile"><button class="px-3 py-1 bg-slate-200 rounded-md ml-8"><-</button></a>
+            <a href="/profile"><button class="px-3 py-1 bg-slate-200 rounded-md ml-8"><i class="bi bi-arrow-left"></i></button></a>
         </div>
 
         <div class="items-center max-w-screen-md mx-auto ">

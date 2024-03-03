@@ -84,7 +84,7 @@ const getExplore =()=>{
                             <span class="bi bi-chat-left-text"></span>
                             <small>${x.jml_like}</small>
                             <span class="bi ${x.idUserLike === x.useractive ? 'bi-heart-fill text-red-500': 'bi-heart'}" onclick="likes(this, ${x.id})"></span>
-                            <a href="/edit/${x.id}" class="bg-green-300 px-1 rounded-md"><span class="bi bi-pencil-fill"></span></a>
+                            <a href="/edit/${x.id}" class="bg-green-300 px-1 rounded-md"><span class="bi bi-pencil-square"></span></a>
                             <a href="/hapus/${x.id}" class="bg-red-400 px-1 rounded-md"><span class="bi bi-trash3-fill"></span></a>
                         </div>
                     </div>

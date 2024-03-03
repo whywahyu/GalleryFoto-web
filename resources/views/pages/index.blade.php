@@ -1,10 +1,8 @@
 @extends('include.master2')
 @section('content')
 
-
     <section class="">
         <div class="mt-7">
-
             <h3 class="text-center font-hurricane text-7xl">
                 Save Your Momments
             </h3>
@@ -24,7 +22,6 @@
                             <img src="/assets/img-09.jpg" alt="" class="transition duration-500 ease-in-out hover:scale-105">
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
