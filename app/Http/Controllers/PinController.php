@@ -17,7 +17,7 @@ class PinController extends Controller
     }
 
     public function getdata(Request $request){
-        $explore = Foto::with('likefotos')->withCount(['likefotos', 'comments'])->where('user_id', $request->idUser)->paginate(4);
+        $explore = Foto::with('likefotos')->withCount(['likefotos', 'comments'])->where('user_id', $request->idUser)->latest()->paginate(4);
         return response()->json([
             'data' =>$explore,
             'statuscode' => 200,

@@ -38,7 +38,7 @@
                         <input type="text" name="judul_baru" id="" class="py-1 rounded-full border-slate-500" value="{{$foto->judul_foto}}">
                         <h3 class="mt-4">Deskripsi</h3>
                         <input type="text" name="deskripsi_baru" id="" class="py-6  rounded-md border-slate-500" value="{{$foto->deskripsi_foto}}">
-                        <h3 class="mt-3">Pilih Album</h3>
+                        <h3 class="mt-3">Album</h3>
                         <select name="album" id=""  class="rounded-full">
                             <option value="">--Pilih Album--</option>
                             @foreach ($albums as $album )

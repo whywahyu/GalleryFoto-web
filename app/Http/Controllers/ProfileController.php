@@ -18,7 +18,7 @@ class ProfileController extends Controller
     }
 
     public function getdata(Request $request){
-        $explore = Foto::with('likefotos')->withCount(['likefotos', 'comments'])->where('user_id', auth()->id())->paginate(4);
+        $explore = Foto::with('likefotos')->withCount(['likefotos', 'comments'])->where('user_id', auth()->id())->latest()->paginate(4);
         return response()->json([
             'datapost'      =>$explore,
             'statuscode'    => 200,

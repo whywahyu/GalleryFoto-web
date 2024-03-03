@@ -29,7 +29,7 @@
     @endif
     <section class="mt-6">
         <div class="max-w-screen-md mx-auto">
-            <a href="/buatalbum"><button class="px-2 py-1 bg-green-400 rounded-md text-white"><i class="bi bi-plus-circle"></i></button></a>
+            <a href="/buatalbum"><button class="px-2 py-1 bg-green-400 rounded-md text-white"><i class="bi bi-plus-circle"></i> Buat Album</button></a>
             <div class="flex flex-wrap items-center mt-6 flex-container">
 
                 @foreach ($albums as $album)
