@@ -32,7 +32,7 @@
                                 <img src="" class="w-10 h-10 rounded-full" alt="" id="profile">
                             </div>
                             <div class="flex flex-col">
-                                <a href="/other-pin/" class="text-md" id="username"></a>
+                                <a href="/other-pin/" class="text-md font-semibold" id="username"></a>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,8 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-wrap mt-10 flex-container" id="exploredata">
+            <p class="text-center font-semibold mt-6">Postingan Lainnya</p>
+            <div class="flex flex-wrap mt-6 flex-container" id="exploredata">
 
             </div>
         </div>

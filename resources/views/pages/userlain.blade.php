@@ -13,7 +13,7 @@
         @csrf
         <div class="flex flex-col items-center max-w-screen-md px-2 mx-auto mt-4">
             <div>
-                <img src="/assets/img-07.jpg" alt="" class="w-24 h-24 rounded-full" id="imageUser">
+                <img src="" alt="" class="w-24 h-24 rounded-full" id="imageUser">
             </div>
             <h3 class="text-xl font-semibold" id="namaUser">
                 Why

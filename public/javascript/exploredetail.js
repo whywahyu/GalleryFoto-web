@@ -128,7 +128,7 @@ function ambilKomentar(){
     $.getJSON(window.location.origin +'/explore-detail/getComment/'+segmentTerakhir, function(res){
         console.log(res)
         if(res.data.length === 0){
-            $('#listkomentar').html('<div>belom ada komentar</div>')
+            $('#listkomentar').html('<div>Belom ada komentar</div>')
         } else {
             comment= []
             res.data.map((x)=>{

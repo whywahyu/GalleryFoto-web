@@ -47,7 +47,7 @@
                             </select>
                             <div class="flex flex-row justify-between">
                                 <div></div>
-                                <button class="px-6 py-1 mt-4 w-full text-white rounded-md bg-green-500">upload</button>
+                                <button class="px-6 py-1 mt-4 w-full text-white rounded-md bg-green-500">Upload</button>
                             </div>
                         </div>
                     </div>
